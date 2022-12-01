@@ -1,0 +1,124 @@
+:root {
+    --background-color: rgb(30, 7, 7);
+}
+
+body {
+    background-color: var(--background-color);
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+    display: grid;
+    place-items: center;
+    z-index: 0;
+}
+
+#wrapper {
+    aspect-ratio: 1.618;
+    width: 90vmin;
+    position: relative;
+    border: 0px dotted white;
+    z-index: inherit;
+}
+
+#wrapper > .shape {
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    transition: left, top, height, width, border-radius, transform;
+    transition-duration: 750ms;
+    transition-timing-function: cubic-bezier(.17,.67,.53,.94);
+    z-index: -1;
+    border-radius: 25px;
+}
+
+#wrapper > .shape[data-interactable="true"]:hover {
+    transform: scale(90%,90%);
+}
+
+#wrapper > .shape[data-interactable="true"] {
+    z-index: 1000;
+}
+
+
+#wrapper > .shape[data-transition="spawn"] {
+    transform: scale(50%, 50%);
+    z-index: -1000;
+}
+
+#wrapepr > .shape[data-transition="static"] {
+    transform: scale(100%, 100%);
+}
+
+#wrapper > .shape:nth-child(1) {
+    background-color: var(--background-color);
+    top: 0%;
+    left:70%;
+    height: 50%;
+    width: 30%;
+    border-radius: 25px;
+    z-index: 0;
+}
+
+#wrapper > .shape:nth-child(2) {
+    background-color: var(--background-color);
+    left: 30%;
+    top: 0%;
+    height: 70%;
+    width: 40%;
+    border-radius: 25px;
+    z-index: 0;
+}
+
+#wrapper > .shape:nth-child(3) {
+    background-color: var(--background-color);
+    top: 70%;
+    left: 40%;
+    width: 40%;
+    height: 30%;
+    border-radius: 25px;
+    z-index: 0;
+}
+
+#wrapper > .shape:nth-child(4) {
+    background-color: var(--background-color);
+    left: 0%;
+    top: 0%;
+    width: 30%;
+    height: 70%;
+    border-radius: 25px;
+    z-index: 0;
+    
+}
+
+#wrapper > .shape:nth-child(5) {
+    background-color: var(--background-color);
+    top: 50%;
+    left: 70%;
+    height: 20%;
+    width: 10%;
+    border-radius: 25px;
+    z-index: 0;
+}
+
+#wrapper > .shape:nth-child(6) {
+    background-color: var(--background-color);
+    left: 80%;
+    top: 50%;
+    width: 20%;
+    height: 50%;
+    border-radius: 25px;
+    z-index: 0;
+}
+
+#wrapper > .shape:nth-child(7) {
+    background-color: var(--background-color);
+    top: 70%;
+    left: 0%;
+    height: 30%;
+    width: 40%;
+    border-radius: 25px;
+    z-index: 0;
+}
+
