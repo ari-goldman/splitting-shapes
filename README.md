@@ -1,6 +1,8 @@
-# [https://ari-goldman.github.io/splitting-shapes/](https://ari-goldman.github.io/splitting-shapes/)
+# [https://splitting-shapes.ari-goldman.xyz/](https://splitting-shapes.ari-goldman.xyz/)
 
 A first experience with HTML, CSS, and JavaScript
+
+For some reason, it now shifts up in the DOM after a few seconds on Chrome... won't get around to fixing it though :(
 
 Learned many things, like:
 1. don't use .innerHTML on elements
